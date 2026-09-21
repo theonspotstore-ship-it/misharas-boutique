@@ -107,7 +107,11 @@
     letter-spacing:.16em;
     font-size:0.72rem;
     font-weight:500;
+    transition: color .2s ease;
   }
+  .hero-cue:hover,
+  .hero-cue:focus-visible{ color: var(--maroon); }
+  .hero-cue:focus-visible{ outline: 2px solid var(--gold); outline-offset:4px; }
   .hero-cue svg{ width:14px; height:20px; }
 
   /* ---------- Divider ---------- */
@@ -316,12 +320,12 @@
         width="747" height="897"
         fetchpriority="high" id="botique">
     </div>
-    <div class="hero-cue">
+    <a class="hero-cue" href="#connect" aria-label="Scroll to next section">
       <span>SCROLL</span>
       <svg viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M7 1V19M7 19L1 13M7 19L13 13" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-    </div>
+    </a>
   </section>
 
   <div class="flourish" aria-hidden="true">
@@ -335,7 +339,7 @@
     </svg>
   </div>
 
-  <main class="connect">
+  <main class="connect" id="connect">
     <div class="wrap">
       <div class="connect-intro">
         <h1>Find us online</h1>
